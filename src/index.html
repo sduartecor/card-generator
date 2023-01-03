@@ -14,11 +14,12 @@
   </head>
   <body class="bg-success">
     <div class="container-fluid">
-      <div class="container">
+      <div class="container" id="box">
         <!-- Card Body -->
         <div
-          class="px-3 my-5 rounded m-auto bg-white"
+          class="px-3 my-3 rounded m-auto bg-white"
           style="height: 500px; width: 25%;"
+          id="card"
         >
           <!-- Upper icon-->
           <div class="row" style="font-size: 80px;">
@@ -29,13 +30,38 @@
             <span id="number"></span>
           </div>
           <!-- Lower icon-->
-          <div class="d-flex flex-row-reverse" style="font-size: 80px; ">
+          <div
+            class="d-flex flex-row  justify-content-end float-right"
+            style="font-size: 80px; "
+          >
             <span style="transform: rotate(180deg);" id="bottom"></span>
           </div>
         </div>
         <div class="row justify-content-center w-25 m-auto">
-          <button id="btnGenerate" class="btn btn-light">
+          <button id="btnGenerate" class="btn btn-primary">
             Generate Card
+          </button>
+        </div>
+
+        <div class="flex-row m-auto w-25 py-2 d-flex">
+          <input
+            type="text"
+            class="form-control mx-2"
+            id="hInput"
+            placeholder="height"
+          />
+
+          <input
+            type="text"
+            class="form-control mx-2"
+            id="wInput"
+            placeholder="width"
+          />
+        </div>
+
+        <div class="row m-auto py-1 w-25">
+          <button id="btnChange" class="btn btn-info">
+            Change Size
           </button>
         </div>
       </div>

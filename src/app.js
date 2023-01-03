@@ -41,7 +41,7 @@ function generateRandomCard() {
 
   //Obtener Simbolo Aleatorio
   let option = Math.floor(Math.random() * 4) + 1;
-  let symbol_number = "\u2660";
+  let symbol_number;
   switch (option) {
     case 1: // Corazon
       symbol_number = "\u2665";
@@ -74,3 +74,11 @@ function generateRandomCard() {
   document.getElementById("upper").innerHTML = symbol_number;
   document.getElementById("bottom").innerHTML = symbol_number;
 }
+
+document.getElementById("btnChange").addEventListener("click", () => {
+  let hNew = document.getElementById("hInput").value;
+  let wNew = document.getElementById("wInput").value;
+
+  document.getElementById("card").style.height = hNew + "px";
+  document.getElementById("card").style.width = wNew + "px";
+});
