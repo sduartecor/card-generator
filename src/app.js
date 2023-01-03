@@ -15,7 +15,7 @@ window.onload = function() {
   setInterval(() => {
     //Obtener Numero Aleatorio
     generateRandomCard();
-  }, 2000);
+  }, 10000);
 };
 
 function generateRandomCard() {
@@ -44,25 +44,25 @@ function generateRandomCard() {
   let symbol_number;
   switch (option) {
     case 1: // Corazon
-      symbol_number = "\u2665";
+      symbol_number = "♥";
       document.getElementById("upper").style.color = "red";
       document.getElementById("bottom").style.color = "red";
       document.getElementById("number").style.color = "red";
       break;
     case 2: // Hoja
-      symbol_number = "\u2660";
+      symbol_number = "♠";
       document.getElementById("upper").style.color = "black";
       document.getElementById("bottom").style.color = "black";
       document.getElementById("number").style.color = "black";
       break;
     case 3: // Trebol
-      symbol_number = "\u2663";
+      symbol_number = "♣";
       document.getElementById("upper").style.color = "black";
       document.getElementById("bottom").style.color = "black";
       document.getElementById("number").style.color = "black";
       break;
     case 4: // Diamante
-      symbol_number = "\u2666";
+      symbol_number = "♦";
       document.getElementById("upper").style.color = "red";
       document.getElementById("bottom").style.color = "red";
       document.getElementById("number").style.color = "red";
